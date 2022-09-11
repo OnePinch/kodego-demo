@@ -1,0 +1,76 @@
+body{
+    background-color: #e5e5e5;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px;
+}
+img:hover {
+    box-shadow: 0 0 3px 2px rgba(61, 190, 233, 0.5);
+}
+div.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: auto;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.main{
+    position: absolute;
+    background-color:#f4f4f4;
+    padding: 30px 30px 30px 30px;
+    width: 500px;
+    border-radius: 10px;
+    border: 4px groove;
+    margin-top: 150px;
+    margin-left: 180px;
+}
+h2.intro{
+    position:fixed;
+    margin-left: 1135px;
+    margin-top: 450px;
+    text-decoration: overline underline;
+}
+div.main p{
+    font-size: 19px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 21px;
+}
+div.main h1{
+    text-align: center;
+}
+div.exercises1{
+    float: left;
+    margin-top: 200px;
+    margin-left: 800px;
+}
+div.exercises2{
+    float: left;
+    padding-left: 50px;
+    margin-top: 130px;
+}
+div.exercises3{
+    float: left;
+    margin-top: 200px;
+    padding-left: 50px;
+}
+div.exercises4{
+    float: left;
+    margin-left: 800px;
+    margin-top: 20px;
+}
+div.exercises5{
+    float: left;
+    margin-top: 80px;
+    padding-left: 50px;
+}
+div.exercises6{
+    float: left;
+    margin-top: 20px;
+    padding-left: 50px;
+}
