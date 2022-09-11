@@ -30,6 +30,12 @@ div.main{
     margin-top: 150px;
     margin-left: 180px;
 }
+h2.intro{
+    position:fixed;
+    margin-left: 1135px;
+    margin-top: 450px;
+    text-decoration: overline underline;
+}
 div.main p{
     font-size: 19px;
     font-family:Arial, Helvetica, sans-serif;
@@ -39,32 +45,32 @@ div.main h1{
     text-align: center;
 }
 div.exercises1{
-    position: fixed;
-    margin-top: 180px;
+    float: left;
+    margin-top: 200px;
     margin-left: 800px;
 }
 div.exercises2{
-    position: fixed;
-    margin-top: 120px;
-    margin-left: 1100px;
+    float: left;
+    padding-left: 50px;
+    margin-top: 130px;
 }
 div.exercises3{
-    position: fixed;
-    margin-top: 180px;
-    margin-left: 1400px;
+    float: left;
+    margin-top: 200px;
+    padding-left: 50px;
 }
 div.exercises4{
-    position: fixed;
-    margin-top: 490px;
-    margin-left: 780px;
+    float: left;
+    margin-left: 800px;
+    margin-top: 20px;
 }
 div.exercises5{
-    position: fixed;
-    margin-top: 550px;
-    margin-left: 1080px;
+    float: left;
+    margin-top: 80px;
+    padding-left: 50px;
 }
 div.exercises6{
-    position: fixed;
-    margin-top: 490px;
-    margin-left: 1400px;
+    float: left;
+    margin-top: 20px;
+    padding-left: 50px;
 }
