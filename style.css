@@ -11,7 +11,7 @@ img{
 img:hover {
     box-shadow: 0 0 3px 2px rgba(61, 190, 233, 0.5);
 }
-div.gallery {
+/*div.gallery {
     margin: 10px;
     border: 1px solid #ccc;
     float: left;
@@ -19,7 +19,7 @@ div.gallery {
 }
 div.gallery:hover {
     border: 1px solid #777;
-}
+}*/
 div.main{
     position: absolute;
     background-color:#f4f4f4;
@@ -31,10 +31,10 @@ div.main{
     margin-left: 180px;
 }
 h2.intro{
-    position:fixed;
+    position:absolute;
     margin-left: 1135px;
-    margin-top: 450px;
-    text-decoration: overline underline;
+    margin-top: 455px;
+    text-decoration: overline underline royalblue;
 }
 div.main p{
     font-size: 19px;
@@ -49,28 +49,94 @@ div.exercises1{
     margin-top: 200px;
     margin-left: 800px;
 }
+div.exercises1 p{
+    position: absolute;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(255, 94, 45);
+    margin-top: 115px;
+    margin-left: 85px;
+}
 div.exercises2{
     float: left;
     padding-left: 50px;
     margin-top: 130px;
+}
+div.exercises2 p{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 85px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(255, 94, 45);
+    
 }
 div.exercises3{
     float: left;
     margin-top: 200px;
     padding-left: 50px;
 }
+div.exercises3 p{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 85px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(255, 94, 45);
+}
 div.exercises4{
     float: left;
     margin-left: 800px;
     margin-top: 20px;
+}
+div.exercises4 p{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 85px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(255, 94, 45);
+    
 }
 div.exercises5{
     float: left;
     margin-top: 80px;
     padding-left: 50px;
 }
+div.exercises5 p{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 85px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(255, 94, 45);
+    
+}
 div.exercises6{
     float: left;
     margin-top: 20px;
     padding-left: 50px;
+}
+div.exercises6 p{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 85px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(255, 94, 45);
+    
+}
+div.exercises7{
+    float: left;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+div.exercises7 p{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 85px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(255, 94, 45);
+    
 }
