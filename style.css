@@ -1,6 +1,5 @@
 body{
     background-color: #e5e5e5;
-    margin: 25px;
 }
 div.firstwrapp{
     width: 100%;
@@ -30,15 +29,14 @@ div.shortintro p{
         width: 30%;
 		}
 }
-@media all and (max-width: 700px) and (min-width: 300px) {
+@media all and (max-width: 600px) and (min-width: 300px) {
 	div.shortintro{
-        width: 50%;
+        width: 30%;
 		}
 }
 @media all and (max-width: 500px) and (min-width: 300px) {
 	div.shortintro{
         width: 71%;
-        margin-left: 35px;
 		}
 }
 h1.introhtml{
@@ -55,7 +53,7 @@ div.exercise {
     margin-left: 30px;
 }
 div.exercise img{
-    width: 200px;
+    width: 190px;
     height: 100px;
 }
 div.exercise:hover img{
