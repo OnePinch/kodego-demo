@@ -13,7 +13,7 @@ div.shortintro{
     background-color:#f4f4f4;
     padding: 30px 30px 30px 30px;
     margin-top: 100px;
-    margin-left: 5%;
+    margin-left: 7%;
     margin-bottom: 20px;
 }
 div.shortintro h1{
@@ -31,13 +31,17 @@ div.shortintro p{
 }
 @media all and (max-width: 600px) and (min-width: 300px) {
 	div.shortintro{
-        width: 30%;
+        width: 75%;
+        margin-left: 35px;
 		}
 }
-@media all and (max-width: 500px) and (min-width: 300px) {
+@media all and (max-width: 400px) and (min-width: 300px) {
 	div.shortintro{
-        width: 71%;
+        width: 70%;
 		}
+    div.exercise{
+        margin-right: 10px;
+    }
 }
 h1.introhtml{
     text-align: center;
