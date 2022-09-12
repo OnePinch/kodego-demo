@@ -1,154 +1,82 @@
 body{
     background-color: #e5e5e5;
+    margin: 25px;
 }
-img{
-    width: 250px;
-    height: 250px;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    padding: 5px;
+div.firstwrapp{
+    width: 100%;
+    height: 100%;
+    border: 5px black;
 }
-img:hover {
-    box-shadow: 0 0 3px 2px rgba(61, 190, 233, 0.5);
-}
-/*div.gallery {
-    margin: 10px;
-    border: 1px solid #ccc;
+div.shortintro{
     float: left;
-    width: auto;
-}
-div.gallery:hover {
-    border: 1px solid #777;
-}*/
-div.main{
-    position: absolute;
-    background-color:#f4f4f4;
-    padding: 30px 30px 30px 30px;
-    width: 500px;
     border-radius: 10px;
     border: 4px groove;
-    margin-top: 150px;
-    margin-left: 180px;
+    background-color:#f4f4f4;
+    padding: 30px 30px 30px 30px;
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-bottom: 20px;
 }
-h2.intro{
-    position:absolute;
-    margin-left: 1135px;
-    margin-top: 455px;
-    text-decoration: overline underline royalblue;
+div.shortintro h1{
+    text-align: center;
 }
-div.main p{
+div.shortintro p{
     font-size: 19px;
     font-family:Arial, Helvetica, sans-serif;
     line-height: 21px;
 }
-div.main h1{
+@media all and (max-width: 800px) and (min-width: 300px) {
+	div.shortintro{
+        width: 30%;
+		}
+}
+@media all and (max-width: 700px) and (min-width: 300px) {
+	div.shortintro{
+        width: 50%;
+		}
+}
+@media all and (max-width: 500px) and (min-width: 300px) {
+	div.shortintro{
+        width: 71%;
+        margin-left: 35px;
+		}
+}
+h1.introhtml{
     text-align: center;
+    padding-top: 30px;
 }
-div.exercises1{
+div.exercise {
     float: left;
-    margin-top: 200px;
-    margin-left: 800px;
-}
-div.exercises1 p{
-    position: absolute;
-    font-size: 24px;
-    font-weight: bolder;
-    color: rgb(255, 94, 45);
-    margin-top: 115px;
-    margin-left: 85px;
-}
-div.exercises2{
-    float: left;
-    padding-left: 50px;
-    margin-top: 130px;
-}
-div.exercises2 p{
-    position: absolute;
-    margin-top: 115px;
-    margin-left: 85px;
-    font-size: 24px;
-    font-weight: bolder;
-    color: rgb(255, 94, 45);
-    
-}
-div.exercises3{
-    float: left;
-    margin-top: 200px;
-    padding-left: 50px;
-}
-div.exercises3 p{
-    position: absolute;
-    margin-top: 115px;
-    margin-left: 85px;
-    font-size: 24px;
-    font-weight: bolder;
-    color: rgb(255, 94, 45);
-}
-div.exercises4{
-    float: left;
-    margin-left: 800px;
+    width: auto;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 20px;
+    margin-left: 30px;
 }
-div.exercises4 p{
+div.exercise img{
+    width: 200px;
+    height: 100px;
+}
+div.exercise:hover img{
+    opacity: 0.3;
+}
+div.middle {
+    transition: .5s ease;
+    opacity: 0;
     position: absolute;
-    margin-top: 115px;
-    margin-left: 85px;
-    font-size: 24px;
-    font-weight: bolder;
-    color: rgb(255, 94, 45);
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
 }
-div.exercises5{
-    float: left;
-    margin-top: 80px;
-    padding-left: 50px;
+div.exercise:hover .middle{
+    opacity: 1;
 }
-div.exercises5 p{
-    position: absolute;
-    margin-top: 115px;
-    margin-left: 85px;
-    font-size: 24px;
-    font-weight: bolder;
-    color: rgb(255, 94, 45);
-    
-}
-div.exercises6{
-    float: left;
-    margin-top: 20px;
-    padding-left: 50px;
-}
-div.exercises6 p{
-    position: absolute;
-    margin-top: 115px;
-    margin-left: 85px;
-    font-size: 24px;
-    font-weight: bolder;
-    color: rgb(255, 94, 45);
-}
-div.exercises7{
-    position: absolute;
-    margin-left: 915px;
-    margin-top: 740px;
-}
-div.exercises7 p{
-    position: absolute;
-    margin-top: 115px;
-    margin-left: 85px;
-    font-size: 24px;
-    font-weight: bolder;
-    color: rgb(255, 94, 45);
-}
-div.exercises8{
-    position: absolute;
-    margin-left: 1310px;
-    margin-top: 740px;
-}
-div.exercises8 p{
-    position: absolute;
-    margin-top: 115px;
-    margin-left: 85px;
-    font-size: 24px;
-    font-weight: bolder;
-    color: rgb(255, 94, 45);
-    
+div.middle a{
+    background-color: #3a8fff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+    text-decoration: none;
 }
