@@ -124,14 +124,26 @@ div.exercises6 p{
     font-size: 24px;
     font-weight: bolder;
     color: rgb(255, 94, 45);
-    
 }
 div.exercises7{
-    float: left;
-    margin-top: 20px;
-    padding-left: 50px;
+    position: absolute;
+    margin-left: 915px;
+    margin-top: 740px;
 }
 div.exercises7 p{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 85px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(255, 94, 45);
+}
+div.exercises8{
+    position: absolute;
+    margin-left: 1310px;
+    margin-top: 740px;
+}
+div.exercises8 p{
     position: absolute;
     margin-top: 115px;
     margin-left: 85px;

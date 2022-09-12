@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8th Exercise - iFrame</title>
+    <link href="img/favicon.ico" id="ico" rel="icon" rev="ico" />
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    div.leftpane{
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+    }
+    .leftpane iframe{
+        border: none;
+        height: 965px;
+    }
+    div.rightpane{
+        float: right;
+        width: 80%;
+        height: 100%;
+    }
+    .rightpane iframe{
+        border: none;
+        height: 965px;
+    }
+</style>
+<body>
+    <main>
+        <div>
+            <div class="leftpane">
+                <iframe src="iframe.html " width="100%"></iframe>
+            </div>
+            <div class="rightpane">
+                <iframe src="index.html" width="100%" name="iframe_right"></iframe>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
