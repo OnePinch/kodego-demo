@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+    <link href="img/favicon.ico" id="ico" rel="icon" rev="ico" />
+    <style>
+        a{
+            text-decoration:  none;
+            background:#e9e8e8;
+            color: #bb790e;
+            box-shadow: 0 5px 8px #a7a7a7;
+            border-radius: 11px;
+            padding: 10px 10px 10px 10px;
+            text-align: center;
+            margin-left: 100px;
+        }
+        a:hover{
+            background-color: #006eff;
+            color:#f6f6f6;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div style="padding-left: 100px;padding-top: 50px;">
+            <form method="">
+                <table width="600px" height="500px">
+                    <tr>
+                        <td colspan="2"><h1>Learning HTML Form</h1></th>
+                    </tr>
+                    <tr>
+                        <td><label for="fname">Full name</label></td>
+                        <td><input type="text" maxlength="15" title="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password</label></td>
+                        <td><input type="password" name="pass" id="password" title="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email address</label></td>
+                        <td><input type="email" name="email" id="email" title="email" required></tr>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td><input type="radio" name="status" id="status" value="single"><label for="status">Single</label><input type="radio" name="status" id="status" value="married"><label for="status">Married</label><input type="radio" name="status" id="status" value="Widowed"><label for="status">Widowed</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth</label></td>
+                        <td><input type="date" name="dob" id="dob" required></td>
+                    </tr>
+                    <tr>
+                        <td>Government Benefits</td>
+                        <td><input type="checkbox" name="sss" id="gbenifits"><label for="sss">SSS</label><br><input type="checkbox" name="hdmf" id="gbenifits"><label for="sss">HDMF</label><br><input type="checkbox" name="philhealth" id="gbenifits"><label for="sss">Philhealth</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="schedule">Preferred schedule</label></td>
+                        <td><input type="time" name="schedule" id="schedule"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="internet">Internet Provider</label></td>
+                        <td><input type="text" name="internet" id="internet" maxlength="15"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pic">Upload ID Photo</label></td>
+                        <td><input type="file" name="pic" id="pic" accept="image/jpeg" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addinfo">Additional Information</label></td>
+                        <td><textarea name="addinfo" id="addinfo" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th colspan="2"><input type="button" value="Submit"></th>
+                    </tr>
+                </table>
+            </form>
+        </div><br><br>
+        <a href="index.html" target="_self">Back to previous page</a>
+    </main>
+</body>
+</html>
