@@ -1,55 +1,64 @@
 body{
     background-color: #e5e5e5;
+    margin: 0px;
 }
-div.firstwrapp{
-    width: 100%;
-    height: 100%;
-    border: 5px black;
+main{
+    margin-left: 30px;
+    margin-right: 30px;
 }
-div.shortintro{
-    float: left;
+.firstwrap{
+    display: block;
+    padding-left: 80px;
+}
+.col2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 15px 10px 0px;
+}
+.introduction{
     border-radius: 10px;
-    border: 4px groove;
+    border: 1px groove #bda4a4;
     background-color:#f4f4f4;
-    padding: 30px 30px 30px 30px;
+    padding: 30px 20px 30px 20px;
     margin-top: 100px;
-    margin-left: 7%;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    width: 34%;
 }
-div.shortintro h1{
+.coverage{
+    margin-top: 50px;
+    width: 50%;
+}
+/*width display response*/
+@media (max-width: 800px) and (min-width:580px){
+.col-md-6 .intro{
+    width: 87%;
+    margin-bottom: 10px
+}
+.col-md-6 {
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.col-md-6 img{
+    margin-top: 10px;
+    width: 500px;
+    margin-left: 25%;
+}
+}
+/*end width display response*/
+/*start of second wrap*/
+.secondwrap{
+    display: block;
+}
+.secondwrap h1{
     text-align: center;
+    text-decoration: overline underline royalblue;
 }
-div.shortintro p{
-    font-size: 19px;
-    font-family:Arial, Helvetica, sans-serif;
-    line-height: 21px;
-}
-@media all and (max-width: 800px) and (min-width: 300px) {
-	div.shortintro{
-        width: 30%;
-		}
-}
-@media all and (max-width: 600px) and (min-width: 300px) {
-	div.shortintro{
-        width: 75%;
-        margin-left: 35px;
-		}
-}
-@media all and (max-width: 400px) and (min-width: 300px) {
-	div.shortintro{
-        width: 70%;
-		}
-    div.exercise{
-        margin-right: 10px;
-    }
-}
-h1.introhtml{
-    text-align: center;
-    padding-top: 30px;
+.col4{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 div.exercise {
-    float: left;
-    width: auto;
     position: relative;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -57,8 +66,8 @@ div.exercise {
     margin-left: 30px;
 }
 div.exercise img{
-    width: 190px;
-    height: 100px;
+    width: 570px;
+    height: auto;
 }
 div.exercise:hover img{
     opacity: 0.3;
@@ -81,4 +90,10 @@ div.middle a{
     font-size: 15px;
     padding: 10px 10px;
     text-decoration: none;
+}
+footer{
+    background-color: rgb(34, 34, 34);
+    padding: 30px 30px 30px 30px;
+    color: #f4f4f4;
+    margin-top: 30px;
 }
