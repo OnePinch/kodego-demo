@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exercise 9: Basic CSS</title>
+	</head>
+	<body>
+		<main>
+			<h1>The Complete Guide To CSS Selectors</h1>
+			<article>
+				<h2>Learning CSS3 selectors - "The basics"
+				</h2>
+				<div>
+					<img src="/assets/img/learn-css.jpg" alt="">
+				</div>
+				<p>
+					To apply CSS to an element you need to select it. CSS provides you with a number of different ways to do this, and you can explore them in this module.
+					<br>
+					All HTML tags have styles associated with them.
+					<br>
+				</p>
+				<p>
+					Using a class selector gives you the ability to setup an independent style that you can then apply to any HTML Tag.
+					<br>
+					Unlike an HTML selector, which automatically targets a specific tag, a class is given a unique name that is then specified using the sytle attribute in the HTML tag or tags you want to use it in.
+					<br>For example:
+					<br>
+					<span>
+						<span>p.authorName</span>
+
+						<span>{</span>
+						<span>font-size: 1em;</span>
+						<span>}</span>
+					</span>
+				</p>
+
+				<section>
+					<h3>To define an HTML selector:</h3>
+					<p>
+						Start with the HTML selector whose properties yiou want to define. Add a curly bracket to open your rule. Make sure you always close your declaration list with a curly bracket.
+					</p>
+
+				</section>
+
+				<section>
+					<h3>To define a class selector:</h3>
+
+					<p>
+
+						Type a period (.) and a class name, then open and close your decalration block with curly brackets.
+
+					</p>
+					<a href="#">read more</a>
+
+				</section>
+
+			</article>
+			<article>
+				<h2>Learning CSS3 selectors - "Attribute Selectors"</h2>
+				<p>
+					You can look for elements that have a certain HTML attribute, or have a certain value for an HTML attribute, using the attribute selector.
+					<br>
+					Instruct CSS to look for attributes by wrapping the selector with square brackets
+																																																																																																																																							(<span>[ ]</span>).
+
+					<br>
+					<span>
+						<span>[ data-type='primary' ]</span>{
+						<span>color: blue;
+						</span>}
+					</span>
+					<br>
+					This CSS looks for all elements that have an attribute of data-type with a value of primary, like this:
+					<br>
+					&lt;div data-type="primary"&gt; &lt;/div&gt;
+				</p>
+
+
+			</article>
+
+			<article>
+				<h2>Learning CSS3 selectors - "Action PseudoClass Selectors"</h2>
+				<p>
+					HTML elements find themselves in various states, either because they are interacted with, or one of their child elements is in a certain state.
+				</p>
+				<p>
+					For example, an HTML element could be hovered with the mouse pointer by a user or a child element could also be hovered by the user. For those situations, use the
+					<span>:hover</span>
+					pseudo-class.
+
+					<a href="#">read more</a>
+
+				</p>
+				<p>
+					<h3>
+						Pseudo-element #
+					</h3>
+					Pseudo-elements differ from pseudo-classes because instead of responding to the platform state, they act as if they are inserting a new element with CSS. Pseudo-elements are also syntactically different from pseudo-classes, because instead of using a single colon (<span>:</span>), we use a double colon (<span>::</span>)
+
+					<a href="#">read more</a>
+
+				</p>
+			</article>
+			<article>
+				<h2>Learning CSS3 selectors - "Combinators Selectors"</h2>
+
+				<p>
+					A combinator is what sits between two selectors. For example, if the selector was p > strong, the combinator is the > character. The selectors which use these combinators help you select items based on their position in the document.
+
+					<a href="#">read more</a>
+				</p>
+				<p>
+					<h3>Descendant combinator #</h3>
+					To understand descendant combinators, you need to first understand parent and child elements.
+
+
+				</p>
+				<p>
+					&lt;p&gt;A paragraph of text with some &lt;/strong&gt; bold text for emphasis&lt;/strong&gt;.&lt;/p&gt;
+				</p>
+				<p>
+					The parent element is the &lt;p&gt; which contains text. Inside that &lt;p&gt; element is a &lt;strong&gt; element, making its content bold. Because it is inside the &lt;p&gt;, it is a child element.
+					<a href="#">read more</a>
+
+				</p>
+			</article>
+		</main>
+	</body>
+</html>
