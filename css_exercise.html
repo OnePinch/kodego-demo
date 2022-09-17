@@ -5,6 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Exercise 9: Basic CSS</title>
+		<link rel="stylesheet" type="text/css" href="css_exercise.css" media="screen" />
+    	<link href="img/favicon.ico" id="ico" rel="icon" rev="ico" />
 	</head>
 	<body>
 		<main>
@@ -13,7 +15,7 @@
 				<h2>Learning CSS3 selectors - "The basics"
 				</h2>
 				<div>
-					<img src="/assets/img/learn-css.jpg" alt="">
+					<img src="assets/img/learn-css.jpg" alt="">
 				</div>
 				<p>
 					To apply CSS to an element you need to select it. CSS provides you with a number of different ways to do this, and you can explore them in this module.
@@ -28,11 +30,11 @@
 					<br>For example:
 					<br>
 					<span>
-						<span>p.authorName</span>
+						<span class="selector">p.authorName</span>
 
-						<span>{</span>
-						<span>font-size: 1em;</span>
-						<span>}</span>
+						<span class="selector">{</span>
+						<span class="value">font-size: 1em;</span>
+						<span class="selector">}</span>
 					</span>
 				</p>
 
@@ -52,7 +54,7 @@
 						Type a period (.) and a class name, then open and close your decalration block with curly brackets.
 
 					</p>
-					<a href="#">read more</a>
+					<a class="pad" href="#">read more</a>
 
 				</section>
 
@@ -66,9 +68,9 @@
 																																																																																																																																							(<span>[ ]</span>).
 
 					<br>
-					<span>
-						<span>[ data-type='primary' ]</span>{
-						<span>color: blue;
+					<span class="margin">
+						<span class="selector">[ data-type='primary' ]</span>{
+						<span class="value">color: blue;
 						</span>}
 					</span>
 					<br>
@@ -87,7 +89,7 @@
 				</p>
 				<p>
 					For example, an HTML element could be hovered with the mouse pointer by a user or a child element could also be hovered by the user. For those situations, use the
-					<span>:hover</span>
+					<span class="hover">:hover</span>
 					pseudo-class.
 
 					<a href="#">read more</a>
@@ -126,6 +128,7 @@
 
 				</p>
 			</article>
+			<a href="index.html" target="_self">Back to previous page</a>
 		</main>
 	</body>
 </html>

@@ -53,6 +53,14 @@ main{
     text-align: center;
     text-decoration: overline underline royalblue;
 }
+.thirdwrap{
+    display: block;
+    margin-top: 50px;
+}
+.thirdwrap h1{
+    text-align: center;
+    text-decoration: overline underline royalblue;
+}
 .col4{
     display: flex;
     flex-wrap: wrap;

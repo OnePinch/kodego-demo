@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+body{
+    background-image: url('img/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0px;
+    font-family: 'Comfortaa', 'cursive';
+}
+main{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #f5f0c9;
+    opacity: 0.9;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+h1, h2, h3, p, span, a.pad{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+p{
+    font-weight: 400;
+    line-height: 1.6;
+}
+h1{
+    background-color: #242c2f;
+    color: #f7bf2e;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+h2{
+    margin-top: 50px;
+}
+.margin{
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.selector{
+    color: #ff8901;
+}
+.value{
+    color: rgb(204, 0, 255);
+}
+.hover{
+    color: rgb(255, 37, 37);
+}
+a{
+    color: rgb(0, 102, 102);
+    text-decoration: none;
+    background-color: rgb(255, 179, 37);
+    padding: 3px 5px 3px 5px;
+}
+a:hover{
+    padding: 3px 5px 3px 5px;
+    color: rgb(91, 0, 209);
+    border-radius: 6px;
+}
