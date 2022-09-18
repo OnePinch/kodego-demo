@@ -19,7 +19,14 @@ img{
     width: 100%;
     height: auto;
 }
-h1, h2, h3, p, span, a.pad{
+h1, p, span{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+article h2, h3{
+    margin-left: 50px;
+}
+.pad{
     margin-left: 50px;
     margin-right: 50px;
 }
