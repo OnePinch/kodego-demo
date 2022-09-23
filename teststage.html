@@ -2,111 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Welcome to my Kodego bootcamp</title>
     <link rel="stylesheet" type="text/css" href="teststyle.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="menu.css" media="screen" />
     <link href="img/favicon.ico" id="ico" rel="icon" rev="ico" />
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "78%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 </head>
 <body>
+    <header>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="">Home</a>
+              <a href="#html" onclick="closeNav()">HTML Exercises</a>
+              <a href="#css" onclick="closeNav()">CSS Exercises</a>
+              <a href="#contact" onclick="closeNav()">Contact</a>
+            </div>
+        </div>
+          <span onclick="openNav()">&#9776;</span>
+    </header>
     <main>
-        <div class="firstwrap">
-            <div class="col2 col-md-6">
-                <div class="introduction col-md-6 intro">
+        <article class="flex">
+            <div class="introduction">
+                <div>
                     <h1>Welcome! to my Kodego bootcamp journey.</h1>
                             <p>My name is Whistner Rojas, <b>Batch WD19P</b> of <i>Kodego bootcamp</i>.
                             Come and join me as I take my first step to become a Full stack Web Developer.</p>
                 </div>
-                <div class="coverage col-md-6">
-                    <img class="col-md-6" src="img/banner3.png" width="1080px" alt="coverage">
-                </div>
             </div>
-        </div>
-        <div class="secondwrap">
-            <h1>HTML Exercises</h1>
-            <div class="col4">
-                <div class="exercise">
-                    <img src="miniExercises/exercise1.png" alt="Exercise 1" width=""/>
-                    <div class="middle">
-                        <a href="exercise1.html" target="_self">Exercise 1</a>
-                    </div>
-                </div>
-                <div class="exercise">
-                    <img src="miniExercises/exercise2.png" alt="Exercise 2" width=""/>
-                    <div class="middle">
-                        <a href="exercise2.html" target="_self">Exercise 2</a>
-                    </div>
-                </div>
-                <div class="exercise">
-                    <img src="miniExercises/exercise3.png" alt="Exercise 3" width=""/>
-                    <div class="middle">
-                        <a href="exercise3.html" target="_self">Exercise 3</a>
-                    </div>
-                </div>
-                <div class="exercise">
-                    <img src="miniExercises/exercise4.png" alt="Exercise 4" width=""/>
-                    <div class="middle">
-                        <a href="exercise4.html" target="_self">Pre / Code</a>
-                    </div>
-                </div>
-                <div class="exercise">
-                    <img src="miniExercises/exercise5.png" alt="Exercise 5" width=""/>
-                    <div class="middle">
-                        <a href="exercise5.html" target="_self">Exercise 5</a>
-                    </div>
-                </div>
-                <div class="exercise">
-                    <img src="miniExercises/exercise1.png" alt="Exercise 6" width=""/>
-                    <div class="middle">
-                        <a href="exercise6.html" target="_self">Embedding</a>
-                    </div>
-                </div>
-                <div class="exercise">
-                    <img src="miniExercises/exercise7.png" alt="Exercise 7" width=""/>
-                    <div class="middle">
-                        <a href="exercise7.html" target="_self">Table</a>
-                    </div>
-                </div>
-                <div class="exercise">
-                    <img src="miniExercises/exercise2.png" alt="Exercise 8" width=""/>
-                    <div class="middle">
-                        <a href="exercise8.html" target="_self">iFrame</a>
-                    </div>
-                </div>
-                <div class="exercise">
-                    <img src="miniExercises/form.png" alt="Forms" width=""/>
-                    <div class="middle">
-                        <a href="forms.html" target="_self">Forms</a>
-                    </div>
-                </div>
+            <div class="bannerimg">
+                <center><img class="banner" src="img/banner3.png" alt="coverage"></center>
             </div>
-        </div>
-        <div class="thirdwrap">
-            <h1>CSS Exercises</h1>
-            <div class="col4">
-                <div class="exercise">
-                    <img src="miniExercises/cssExercise1.png" alt="Basic CSS" width=""/>
-                    <div class="middle">
-                        <a href="css_exercise.html" target="_self">Basic CSS</a>
+        </article>
+        <article>
+            <a name="html"><h2>HTML Exercises</h2></a>
+            <div class="formargin">
+                <div class="flexexercises">
+                    <div class="exercise">
+                        <img src="miniExercises/exercise1.png" alt="Exercise 1" width=""/>
+                        <div class="middle">
+                            <a href="exercise1.html" target="_self">Pharagraphs <br> and Comments</a>
+                        </div>
+                    </div>
+                    <div class="exercise">
+                        <img src="miniExercises/exercise2.png" alt="Exercise 2" width=""/>
+                        <div class="middle">
+                            <a href="exercise2.html" target="_self">Lines and Break</a>
+                        </div>
+                    </div>
+                    <div class="exercise">
+                        <img src="miniExercises/exercise3.png" alt="Exercise 3" width=""/>
+                        <div class="middle">
+                            <a href="exercise3.html" target="_self">Text Formatting</a>
+                        </div>
+                    </div>
+                    <div class="exercise">
+                        <img src="miniExercises/exercise4.png" alt="Exercise 4" width=""/>
+                        <div class="middle">
+                            <a href="exercise4.html" target="_self">Pre / Code</a>
+                        </div>
+                    </div>
+                    <div class="exercise">
+                        <img src="miniExercises/exercise5.png" alt="Exercise 5" width=""/>
+                        <div class="middle">
+                            <a href="exercise5.html" target="_self">Exercise 5</a>
+                        </div>
+                    </div>
+                    <div class="exercise">
+                        <img src="miniExercises/exercise1.png" alt="Exercise 6" width=""/>
+                        <div class="middle">
+                            <a href="exercise6.html" target="_self">Embedding</a>
+                        </div>
+                    </div>
+                    <div class="exercise">
+                        <img src="miniExercises/exercise7.png" alt="Exercise 7" width=""/>
+                        <div class="middle">
+                            <a href="exercise7.html" target="_self">Table</a>
+                        </div>
+                    </div>
+                    <div class="exercise">
+                        <img src="miniExercises/exercise2.png" alt="Exercise 8" width=""/>
+                        <div class="middle">
+                            <a href="exercise8.html" target="_self">iFrame</a>
+                        </div>
+                    </div>
+                    <div class="exercise">
+                        <img src="miniExercises/form.png" alt="Forms" width=""/>
+                        <div class="middle">
+                            <a href="forms.html" target="_self">Forms</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
+        <br><br>
+        <article>
+            <a name="css"></a><h2>CSS Exercises</h2></a>
+            <div class="formargin">
+                <div class="flexexercises">
+                    <div class="exercise">
+                        <img src="miniExercises/cssExercise1.png" alt="Basic CSS" width=""/>
+                        <div class="middle">
+                            <a href="css_exercise.html" target="_self">Basic CSS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
     </main>
     <footer>
-        <h3>Site Map</h3>
-        <ul>
-            <li>Home</li>
-            <li>HTML Exercises</li>
-            <li>
-                <ul>
-                    <li>Pharagraphs and Comments</li>
-                    <li>Exercise 2</li>
-                    <li>Exercise 3</li>
-                    <li>Exercise 4</li>
-                </ul>
-            </li>
-        </ul>
+        <a name="contact"><h3>Contact Me</h3></a>
+        
     </footer>
 </body>
 </html>

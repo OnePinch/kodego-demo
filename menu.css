@@ -1,0 +1,75 @@
+/*mobile nav bar*/
+
+header span{
+    position:fixed;
+    font-size:30px;
+    cursor:pointer;
+    color: rgb(236, 154, 0);
+    top: 3px;
+    left: 5%;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 5px;
+    padding: 0 10px;
+    z-index: 1;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: right;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+/*end mobile nav bar*/
+/*tablet screen size*/
+@media screen and (min-width : 768px) {
+    .overlay{
+      display: none;
+    }
+
+    header span{
+      display: none;
+    }
+  }
+/*end of tablet screen size*/
