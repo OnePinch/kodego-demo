@@ -115,6 +115,11 @@ footer ul{
 
     .flex{
         z-index: 1;
+        margin: 0 15% 0% 10%;
+    }
+
+    .introduction p{
+        text-align: center;
     }
 
     .bannerimg{
