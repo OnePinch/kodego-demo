@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(245,245,245);
+    font-size: large;
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+}
+
+header{
+    padding: 30px 0;
+    text-align: center;
+}
+
+h1.size{
+    font-size: 60px;
+}
+
+nav{
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 60px;
+}
+
+section{
+    display: inline;
+    float: left;
+    width: 45%;
+    border-left: 1px solid rgba(48, 48, 48, 0.5);
+    border-right: 1px solid rgba(48, 48, 48, 0.5);
+}
+
+section p{
+    margin: 0 20px;
+    line-height: 1.6;
+}
+
+.aleft{
+    display: inline;
+    float: left;
+    width: 20%;
+    padding: 50px 50px;
+}
+
+.aright{
+    display: inline;
+    float: right;
+    width: 20%;
+    padding: 50px 50px;
+}
+
+figure{
+    margin-bottom: 20px;
+}
+
+img{
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+    padding: 30px 0;
+}
+footer hr{
+    position:absolute;
+    left: 10%;
+    width: 75%;
+}
+
+a[href="index.html"]{
+    text-decoration:  none;
+    background:#e9e8e8;
+    color: #bb790e;
+    box-shadow: 0 5px 8px #a7a7a7;
+    border-radius: 11px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin-left: 70px;
+}
+a[href="index.html"]:hover{
+    background-color: #006eff;
+    color:#f6f6f6;
+}

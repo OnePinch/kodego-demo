@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(245,245,245);
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.wrapper{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(255,255,255);
+}
+
+.wrapper p{
+    margin-bottom: 20px;
+}
+
+.wrapper a{
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid rgb(36, 44, 47);
+    background-color: rgb(255, 0, 110);
+    color: aliceblue;
+    border-radius: 3px;
+}
+
+.wrapper a:hover{
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid rgb(36, 44, 47);
+    background-color: rgb(255, 0, 85);
+    border-radius: 3px;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+}
+
+.container a{
+    text-decoration: none;
+    color: rgb(45, 206, 255);
+}
+
+.container a:hover{
+    color: rgb(38, 95, 161);
+}
+
+.right-side-div{
+    position: absolute;
+    right: 2%;
+    width: 30%;
+    background-color: rgb(237,237,237);
+}
+
+.content{
+    margin: 30px 0;
+}
+
+.right-side-div img{
+    width: 80%;
+}
+
+.right-side-div h1, h3, p, a{
+    margin: 0 20px 15px 30px;
+}
+
+.left-side-div{
+    position: relative;
+    left: 2%;
+    width: 63%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.left-side-div h1, h3, p, a{
+    margin: 0 20px 15px 30px;
+}
+
+.alert{
+    position: absolute;
+    right:15px;
+    top:5px;
+}
+
+.alert button{
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(188, 108, 37);
+    border-radius: 6px;
+    border: none;
+}
+
+.promo{
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+}
+
+.promo button{
+    padding: 15px 100px;
+    border: none;
+    background-color:rgb(255, 0, 0);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+a[href="index.html"]{
+    text-decoration:  none;
+    background:#e9e8e8;
+    color: #bb790e;
+    box-shadow: 0 5px 8px #a7a7a7;
+    border-radius: 11px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin-left: 70px;
+}
+a[href="index.html"]:hover{
+    background-color: #006eff;
+    color:#f6f6f6;
+}
