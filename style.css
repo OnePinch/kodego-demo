@@ -110,7 +110,7 @@ header span{
 }
 
 .introduction p{
-    line-height: 22px;
+    line-height: 1.6;
     font-weight: 500;
     font-size: 16px;
 }
@@ -195,7 +195,7 @@ footer ul{
     }
 
     .introduction p{
-        text-align: center;
+        text-align: left;
     }
 
     .bannerimg{
