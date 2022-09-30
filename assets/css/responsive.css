@@ -1,0 +1,82 @@
+body{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    margin-left: 0;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 3px;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+.create-post-btn{
+    background-color: #ff5a5f;
+    padding: 6px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.li-nav-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img{
+    width: 50%;
+    margin-left: 40%;
+    margin-right: 30%;
+}
+
+header{
+    background-image: url("../img/Sunset.jpg");
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+}
+
+.header-content{
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.header-content h1{
+    font-size: 3rem;
+    padding: 10px;
+    color: #14213d;
+}
+
+.header-content p{
+    font-size: 1rem;
+    color: #14213d;
+    line-height: 1.4rem;
+    margin-bottom: 5rem;
+}
+
+.header-content a{
+    text-decoration: none;
+    border: #fff 1px solid;
+    padding: 15px 20px;
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
