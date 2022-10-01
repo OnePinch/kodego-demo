@@ -39,9 +39,9 @@ nav ul li a{
 }
 
 nav img{
-    width: 50%;
-    margin-left: 40%;
-    margin-right: 30%;
+    width: 200px;
+    margin-left: 48%;
+    margin-right: 42%;
 }
 
 header{
@@ -79,4 +79,149 @@ header{
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 5px;
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1900px;
+}
+
+main{
+    padding: 10px;
+}
+
+.post-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-content a{
+    text-decoration: none;
+}
+
+.post-image{
+    width: 100%;
+}
+
+.post-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #14213d;
+}
+
+.post-info a{
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.post-author{
+    margin: 10px;
+}
+
+aside{
+    padding: 10px;
+}
+
+.about-me{
+    padding: 10px;
+    text-align: center;
+    box-shadow:  0 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.about-me img{
+    width: 25%;
+    border-radius: 50%;
+}
+
+.post-content h1{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #14213d;
+}
+
+footer{
+    background-color: #003049;   
+}
+
+footer p{
+    margin: 30px 10px;
+    color: #8d99ae;
+}
+
+footer h1{
+    color:#fff;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #ffbe0b;
+}
+
+.contact span{
+    font-size: 25px;
+    display: block;
+    margin: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact a{
+    color: #0077b6;
+}
+
+.contact i{
+    margin: 0 10px;
+}
+
+.socials i{
+    color: #fdce4cfd;
+    margin: 0 8px 10px;
+}
+
+@media(min-width:675px) {
+    
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .li-nav-items{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    nav img{
+        margin: 0;
+    }
+
+    nav ul li{
+        padding: 10px;
+    }
+
+    main{
+        width: 70%;
+    }
+
+    aside{
+        width: 30%;
+    }
+
+    .container-flex{
+        flex-direction: row;
+    }
+
 }
