@@ -6,27 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>SamOne Printing Services</title>
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
 </head>
 <body>
     <div class="main-container">
-        <div class="nav">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">PRINTING DESIGNS</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">CLOTHES</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
+        <div class="nav-sm">
+            <img src="assets/img/samone.png" />       
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="">HOME</a>
+                  <a href="#html" onclick="closeNav()">COLLECTION</a>
+                  <a href="#css" onclick="closeNav()">SERVICES</a>
+                  <a href="" onclick="closeNav()">ABOUT</a>
+                  <a href="" onclick="closeNav()">CONTACT</a>
+                </div>
+            </div>
+              <span onclick="openNav()">&#9776;</span>
+        </div>
+        <div class="nav-md">
+          <img src="assets/img/samone.png" >   
+          <a href="">HOME</a>
+          <a href="">COLLECTION</a>
+          <a href="">SERVICES</a>
+          <a href="">ABOUT</a>
+          <a href="">CONTACT</a>
         </div>
         <div class="content-container">
             <div class="grid-container">
-                <div class="items">items 1</div>
-                <div class="items">items 2</div>
-                <div class="items">items 3</div>
-                <div class="items">items 4</div>
-                <div class="items">items 5</div>
-                <div class="items">items 6</div>
+                <div class="items"> <!--1st child-->
+                  <h2>Design Your T-shirt</h2>
+                </div>
+                <div class="items"> <!--2nd child-->
+                  <h2>Our Best Seller</h2>
+                </div>
+                <div class="items"> <!--3rd child-->
+                  <h2>T-shirts</h1>
+                </div>
+                <div class="items"> <!--4th child-->
+                  <h2>Hoddie</h1>
+                </div>
+                <div class="items"> <!--5th child-->
+                  <h2>We deliver all over the country</h2>
+                </div>
+                <div class="items"> <!--6th child-->
+                  <h2>We Accept Bulk Orders</h2>
+                </div>
             </div>
         </div>
     </div>

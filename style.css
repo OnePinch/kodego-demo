@@ -73,7 +73,7 @@ header span{
     }
   }
 
-/*end mobile nav bar*/
+
 /*tablet screen size*/
 @media screen and (min-width : 768px) {
     .overlay{
@@ -85,6 +85,7 @@ header span{
     }
   }
 /*end of tablet screen size*/
+/*end mobile nav bar*/
 
 .flex{
     display: flex;
