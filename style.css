@@ -7,7 +7,7 @@
 body{
     background-color: #eeeeee;
     font-size: 18px;
-    font-family: 'Comfortaa', 'cursive';
+    font-family: 'Comfortaa', 'cursive' !important;
 }
 
 /*mobile nav bar*/
