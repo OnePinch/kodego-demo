@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<script>
+    let counter = 1;
+    let imageObjectElement = document.querySelector("img.img-fluid");
+    
+    function decreaseCount(){
+        let imageObjectElement = document.querySelector("img.img-fluid");
+        counter--;
+        if(counter >= 1){
+            
+            if(counter == 1){
+                imageObjectElement.src = "./assets/img/alice01.gif";
+            }
+            else if(counter == 2){
+                imageObjectElement.src = "./assets/img/archery.jpg";
+            }
+            else if(counter == 3){
+                imageObjectElement.src = "./assets/img/bbasket.jpg";
+            }
+            else if (counter == 4){
+                imageObjectElement.src = "./assets/img/mac.jpeg";
+            }
+        }
+        else{
+            counter = 1;
+        }
+    }
+
+    function increaseCount(){
+        let imageObjectElement = document.querySelector("img.img-fluid");
+        counter++;
+        if(counter <= 4){
+            
+            if(counter == 1){
+                imageObjectElement.src = "./assets/img/alice01.gif";
+            }
+            else if(counter == 2){
+                imageObjectElement.src = "./assets/img/archery.jpg";
+            }
+            else if(counter == 3){
+                imageObjectElement.src = "./assets/img/bbasket.jpg";
+            }
+            else if (counter == 4){
+                imageObjectElement.src = "./assets/img/mac.jpeg";
+            }
+        }
+        else{
+            counter = 4;
+        }
+    }
+    function greetings(){
+        alert("Good Evening");
+    }
+</script>
+<body onload="greetings()">
+    <div>
+        <img class="img-fluid" src="./assets/img/alice01.gif" alt="" width="800px" height="600px">
+    </div>
+    <div>
+        <button onclick="decreaseCount()">&lt;&lt;</button>
+        <button onclick="increaseCount()">&gt;&gt;</button>
+    </div>
+
+    <script></script>
+</body>
+</html>

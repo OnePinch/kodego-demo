@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Activity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="col my-5">
+            <h1>First JavaScript Activity</h1>
+        </div>
+        <div class="accordion mb-5" id="accordionExample">
+            <div class="accordion-item">
+                <h1 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      For Loop
+                  </button>
+                </h1>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-7">
+                            <ul class="list-group">
+                                <script>
+                                    let x = ['Soy Sauce', 'Milk', 'Oil', 'Vinegar', 'Coffee', 'Sugar', 'Toot paste', 'Black Pepper', 'Garlic', 'Onion', 'Pork', 'Chicken', 'Fish', 'Leeks', 'Ginger', 'Liver Spread', 'Beet Root', 'Cabage', 'Kale', 'Asparagus'];
+                                    for(let y = 0; y< x.length; y++){
+                                       document.write("<li class='list-group-item'>"+x[y]+"</li>");
+                                    }
+                                    console.log(x.length);
+                                </script>
+                            </ul>
+                        </div>
+                        <div class="col-5">
+                            <h6>Script</h6>
+                            <pre>
+    &lt;script&gt;
+    let x = ['Soy Sauce', 'Milk', 'Oil', 'Vinegar', 'Coffee', 
+    'Sugar', 'Toot paste', 'Black Pepper', 'Garlic', 'Onion', 
+    'Pork', 'Chicken', 'Fish', 'Leeks', 'Ginger', 'Liver Spread'];
+    for(let y = 0; y &lt; x.length; y++){
+        document.write("&lt;li class='list-group-item'&gt;"+x[y]+"&lt;/li&gt;");
+    }
+    &lt;script&gt;
+                            </pre>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            <div class="accordion-item">
+              <h1 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    While loop
+                </button>
+              </h1>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-7">
+                        <ul class="list-group">
+                            <script>
+                                let todo = ['Project 1', 'Project 2', 'Groupings', 'Activity 1', 'Set Up Meeting', 'Call X'];
+                                let list = 0;
+                                while( list < todo.length){
+                                    document.write("<li class='list-group-item'>"+todo[list]+"</li>");
+                                    list++;
+                                }
+                            </script>
+                        </ul>
+                    </div>
+                    <div class="col-5"><h6>Script</h6>
+                    <pre>
+                        &lt;script&gt;
+                            let todo = ['Project 1', 'Project 2', 'Groupings', 'Activity 1', 'Set Up Meeting', 'Call X'];
+                            let list = 0;
+                            while( list &lt; todo.length){
+                                document.write("&lt;li class='list-group-item'&gt;"+todo[list]+"&lt;/li&gt;");
+                                list++;
+                            }
+                        &lt;/script&gt;
+                    </pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h1 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Function - Odd or Even
+                </button>
+              </h1>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <input class="form-control mb-4" type="text" id="number" value="" placeholder="Input Number">
+                                </div>
+                                <div class="col-auto mt-2">
+                                    <strong><p id="oddEven">Result</p></strong>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3" onchange="evenOdd()">Odd or Even</button>
+                            </div>
+                            <script>
+                                function evenOdd(){
+                                    let num = document.getElementById('number');
+                                    number = parseInt(num.value);
+                                    if(number % 2 == 0){
+                                        document.getElementById('oddEven').innerHTML = num.value +" is an even number";
+                                        console.log(num)
+                                    }
+                                    else if(!number){
+                                        document.getElementById('oddEven').innerHTML = " input a number";
+                                        num.className += " border border-danger";
+                                    }
+                                    else{
+                                        document.getElementById('oddEven').innerHTML = num.value +" is an odd number";
+                                    }
+                                }
+                            </script>
+                        </div>
+                        <div class="col-5"><h6>Script</h6>
+                        <pre>
+                            &lt;script&gt;
+                                function evenOdd(){
+                                    let num = document.getElementById('number').value;
+                                    num = parseInt(num);
+                                    if(num % 2 == 0){
+                                        document.getElementById('oddEven').innerHTML = num +" is an even number";
+                                        console.log(num)
+                                    }
+                                    else if(!num){
+                                        document.getElementById('oddEven').innerHTML = num +" is not a number";
+                                    }
+                                    else{
+                                        document.getElementById('oddEven').innerHTML = num +" is an odd number";
+                                    }
+                                }
+                            &lt;script&gt;
+                        </pre>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h1 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Function - Temperature Converter
+                  </button>
+                </h1>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-auto mx-auto">
+                          <div class="row">
+                            <div class="col-5 input-group">
+                              <input type="number" id="tempInput" class="form-control" oninput="temperature()">
+                              <select id="temp1" class="form-select" aria-label="Default select example" onchange="temperature()">
+                                <option value="celcius" selected>Celcius to</option>
+                                <option value="fahrenheit">Fahrenheit to</option>
+                                <input type="text" id="temp2" class="form-control" value="fahrenheit" disabled>
+                              <span for="temp1erature" class="fs-3 input-group-text">=</span>
+                              <input type="text" id="result" class="form-control" disabled>
+                            </div>
+                          </div>
+                        </div>
+                        <script>
+                          let temp1 = document.getElementById('temp1');
+                          let temp2 = document.getElementById('temp2');
+
+                          function temperature(){
+                            let tempInput = document.getElementById('tempInput').value;
+                            let result = document.getElementById('result');
+                            let converToCelcius = (5 / 9)*(tempInput - 32);
+                            let convertToFahrenheit = (1.8 * tempInput) + 32;
+
+                          if(temp1.value == temp2.value || temp2.value == temp1){
+                            if(temp1.value == 'fahrenheit'){
+                              temp2.value = 'celcius';
+                              result.value = converToCelcius+"℃";
+                              console.log(temp2.value+ " temp2");
+                            }
+                            else if(temp1.value == 'celcius'){
+                              temp2.value = 'fahrenheit';
+                              result.value = convertToFahrenheit+"°F";
+                              console.log(temp2.value+ " temp2");
+                            }
+                          }
+                          else{
+                            if(temp1.value == 'fahrenheit'){
+                              temp2.value = 'celcius';
+                              result.value = converToCelcius+"℃";
+                              console.log(temp2.value+ " temp2");
+                            }
+                            else if(temp1.value == 'celcius'){
+                              temp2.value = 'fahrenheit';
+                              result.value = convertToFahrenheit+"°F";
+                              console.log(temp2.value+ " temp2");
+                            }
+                          }
+                          }
+
+                        </script>
+                        <div class="col-auto mt-5 mx-auto">
+                          <h6>Script</h6>
+                        <pre>
+                          &lt;script&gt;
+                            let temp1 = document.getElementById('temp1');
+                            let temp2 = document.getElementById('temp2');
+  
+                            function temperature(){
+                              let tempInput = document.getElementById('tempInput').value;
+                              let result = document.getElementById('result');
+                              let converToCelcius = (5 / 9)*(tempInput - 32);
+                              let convertToFahrenheit = (1.8 * tempInput) + 32;
+  
+                            if(temp1.value == temp2.value || temp2.value == temp1){
+                              if(temp1.value == 'fahrenheit'){
+                                temp2.value = 'celcius';
+                                result.value = converToCelcius+"℃";
+                                console.log(temp2.value+ " temp2");
+                              }
+                              else if(temp1.value == 'celcius'){
+                                temp2.value = 'fahrenheit';
+                                result.value = convertToFahrenheit+"°F";
+                                console.log(temp2.value+ " temp2");
+                              }
+                            }
+                            else{
+                              if(temp1.value == 'fahrenheit'){
+                                temp2.value = 'celcius';
+                                result.value = converToCelcius+"℃";
+                                console.log(temp2.value+ " temp2");
+                              }
+                              else if(temp1.value == 'celcius'){
+                                temp2.value = 'fahrenheit';
+                                result.value = convertToFahrenheit+"°F";
+                                console.log(temp2.value+ " temp2");
+                              }
+                            }
+                            }
+  
+                          &lt;/script&gt;
+                        </pre>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h1 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Function - Height in Meters
+                  </button>
+                </h1>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-7"></div>
+                        <div class="col-5"><h6>Script</h6></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h1 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Switch Case - Day Greetings
+                  </button>
+                </h1>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="row">
+                        <div class="col-7"></div>
+                        <div class="col-5"><h6>Script</h6></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
