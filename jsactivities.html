@@ -13,7 +13,13 @@
         <div class="col my-5">
             <h1>First JavaScript Activity</h1>
         </div>
-        <div class="accordion mb-5" id="accordionExample">
+        <nav class="ms-1" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">JS Activity</li>
+          </ol>
+        </nav>
+        <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h1 class="accordion-header" id="headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -115,7 +121,7 @@
                                     number = parseInt(num.value);
                                     if(number % 2 == 0){
                                         document.getElementById('oddEven').innerHTML = num.value +" is an even number";
-                                        console.log(num);
+                                        console.log(num)
                                     }
                                     else if(!number){
                                         document.getElementById('oddEven').innerHTML = " input a number";
@@ -162,7 +168,7 @@
                     <div class="row">
                         <div class="col-auto mx-auto">
                           <div class="row">
-                            <div class="col-5 input-group">
+                            <div class="col-3 input-group">
                               <input type="number" id="tempInput" class="form-control" oninput="temperature()">
                               <select id="temp1" class="form-select" aria-label="Default select example" onchange="temperature()">
                                 <option value="celcius" selected>Celcius to</option>
@@ -265,8 +271,48 @@
                 <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <div class="row">
-                        <div class="col-7"></div>
-                        <div class="col-5"><h6>Script</h6></div>
+                        <div class="col-7">
+                          <div class="col-2 input-group">
+                            <input type="number" class="form-control" id="feet">
+                            <span class="input-group-text">ft</span>
+                            <input type="number" class="form-control" id="inches">
+                            <span class="input-group-text">in</span>
+                            <span class="input-group-text fs-3 px-4 btn btn-outline-success" onclick="toMeters()">=</span>
+                            <span class="input-group-text fs-5 px-4" id="meters">Convert to Meters</span>
+                          </div>
+
+                          <script>
+                            function toMeters(){
+                              let ft = parseInt(document.getElementById('feet').value);
+                              let inches = parseInt(document.getElementById('inches').value);
+                              let m = document.getElementById('meters');
+
+                              let toCm = ((ft * 12) + inches) * 2.54;
+                              let toM = toCm / 100;
+                              console.log(toCm, "cm");
+                              console.log(toM + " meters");
+                              m.innerHTML = toM + " meters";
+                            }
+                          </script>
+
+                        </div>
+                        <div class="col-5"><h6>Script</h6>
+                        <pre>
+                          &lt;script&gt;
+                            function toMeters(){
+                              let ft = parseInt(document.getElementById('feet').value);
+                              let inches = parseInt(document.getElementById('inches').value);
+                              let m = document.getElementById('meters');
+
+                              let toCm = ((ft * 12) + inches) * 2.54;
+                              let toM = toCm / 100;
+                              console.log(toCm, "cm");
+                              console.log(toM);
+                              m.innerHTML = toM + " meters";
+                            }
+                          &lt;/script&gt;
+                        </pre>
+                        </div>
                       </div>
                   </div>
                 </div>
@@ -280,8 +326,99 @@
                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <div class="row">
-                        <div class="col-7"></div>
-                        <div class="col-5"><h6>Script</h6></div>
+                        <div class="col-4">
+                          <div class="col-5 input-group">
+                            <input class="form-control" type="text" maxlength="9" name="" id="day" placeholder="Enter the day of the week"><span class="btn btn-primary" onclick="greet()">Enter</span>
+                          </div><br>
+                          <div class="col-auto mt-2 mb-5">
+                            <span id="greetings" class="ms-1 p-4 rounded"></span>
+                          </div>
+                        </div>
+                        <script>
+                          function greet(){
+                            let date = document.getElementById('day').value;
+                            date = date.toUpperCase();
+                            let greetings = document.getElementById('greetings');
+                            switch (date){
+                              case 'MONDAY':
+                                greetings.innerHTML = "Happy Monday"
+                                greetings.className += " bg-secondary text-light"
+                                break;
+                              case 'TUESDAY':
+                                greetings.innerHTML = "Happy Tuesday"
+                                greetings.style.backgroundColor = "pink";
+                                break;
+                              case 'WEDNESDAY':
+                                greetings.innerHTML = "Happy Wednesday"
+                                greetings.className += " bg-success text-light"
+                                break;
+                              case 'THURSDAY':
+                                greetings.innerHTML = "Happy Thursday"
+                                greetings.style.backgroundColor = "#6af384";
+                                break;
+                              case 'FRIDAY':
+                                greetings.innerHTML = "Happy Friday"
+                                greetings.className += " bg-info"
+                                break;
+                              case 'SATURDAY':
+                                greetings.innerHTML = "Happy Saturday"
+                                greetings.className += " bg-primary"
+                                break;
+                              case 'SUNDAY':
+                                greetings.innerHTML = "Happy Sunday"
+                                greetings.className += " bg-danger"
+                                break;
+                              default:
+                                greetings.innerHTML = "No such day. Have a Good day anyway!"
+                            }
+                          }
+
+                        </script>
+                        <div class="col-auto ms-3">
+                          <h6>Script</h6>
+                        <pre>
+                          &lt;script&gt;
+                            function greet(){
+                              let date = document.getElementById('day').value;
+                              date = date.toUpperCase();
+                              let greetings = document.getElementById('greetings');
+                              switch (date){
+                                case 'MONDAY':
+                                  greetings.innerHTML = "Happy Monday"
+                                  greetings.className += " bg-secondary text-light"
+                                  break;
+                                case 'TUESDAY':
+                                  greetings.innerHTML = "Happy Tuesday"
+                                  greetings.style.backgroundColor = "pink";
+                                  break;
+                                case 'WEDNESDAY':
+                                  greetings.innerHTML = "Happy Wednesday"
+                                  greetings.className += " bg-success text-light"
+                                  break;
+                                case 'THURSDAY':
+                                  greetings.innerHTML = "Happy Thursday"
+                                  greetings.style.backgroundColor = "#6af384";
+                                  break;
+                                case 'FRIDAY':
+                                  greetings.innerHTML = "Happy Friday"
+                                  greetings.className += " bg-info"
+                                  break;
+                                case 'SATURDAY':
+                                  greetings.innerHTML = "Happy Saturday"
+                                  greetings.className += " bg-primary"
+                                  break;
+                                case 'SUNDAY':
+                                  greetings.innerHTML = "Happy Sunday"
+                                  greetings.className += " bg-danger"
+                                  break;
+                                default:
+                                  greetings.innerHTML = "No such day. Have a Good day anyway!"
+                              }
+                            }
+  
+                          &lt;/script&gt;
+                        </pre>
+                        </div>
                       </div>
                   </div>
                 </div>
