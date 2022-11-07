@@ -107,7 +107,7 @@
                                 </div>
                             </div>
                             <div class="col-auto">
-                                <button type="submit" class="btn btn-primary mb-3" onchange="evenOdd()">Odd or Even</button>
+                                <button type="submit" class="btn btn-primary mb-3" onclick="evenOdd()">Odd or Even</button>
                             </div>
                             <script>
                                 function evenOdd(){
@@ -115,7 +115,7 @@
                                     number = parseInt(num.value);
                                     if(number % 2 == 0){
                                         document.getElementById('oddEven').innerHTML = num.value +" is an even number";
-                                        console.log(num)
+                                        console.log(num);
                                     }
                                     else if(!number){
                                         document.getElementById('oddEven').innerHTML = " input a number";
