@@ -89,7 +89,15 @@ class Calculator {
 class formatHours{
   constructor(_hours){
     this.Hrs = _hours;
-    this.ampm;
+    this.ampm = _hours;
+  }
+
+  amPm(){
+    if(this.ampm > 12){
+      return this.ampm = "P.M";
+    }else if(this.ampm < 12 ){
+      return this.ampm = `A.M`;
+    }
   }
 
   format12(){
@@ -110,11 +118,4 @@ class formatHours{
     // return this.Hrs - 12;
   }
 
-  amPm(){
-    if(this.Hrs >= 12){
-      return this.ampm = "P.M";
-    }else{
-      return this.ampm = "A.M";
-    }
-  }
 }

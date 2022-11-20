@@ -24,9 +24,9 @@ function startMyTime() {
 
     let regular = new formatHours(h, m, s);
     let chosenFormat = document.getElementById('hourFormat').value;
+    let regularHrs = regular.format12();
+    let amOrPm = regular.amPm();
     if(chosenFormat == "regular"){
-        let regularHrs = regular.format12();
-        let amOrPm = regular.amPm();
         document.getElementById("display-time").innerHTML = `${regularHrs}:${m}:${s}`;
         document.getElementById('ampm').innerHTML = `${amOrPm}`;
         t = setTimeout('startMyTime()', 500);
@@ -36,6 +36,7 @@ function startMyTime() {
         document.getElementById('ampm').innerHTML = ``;
         t = setTimeout('startMyTime()', 500);
     }
+    console.log(amOrPm);
 }
 
 let calculator = new Calculator();
