@@ -200,7 +200,8 @@ footer ul{
     }
 
     .bannerimg{
-        display: block;
+        display: flex;
+        justify-content: center;
         width: 100%;
         margin-bottom: 30px;
         border-bottom: 1px solid;
@@ -208,7 +209,7 @@ footer ul{
     }
 
     .banner{
-        width: 80%;
+        width: 100%;
     }
     
     .flexexercises{
